@@ -7,11 +7,11 @@ In functia principala, este creata lista de baza, sunt citite valorile, iar in f
 --u() pentru rezolvarea taskului 2.3. Cu ajutorul unui variabilei nod, se parcurge lista si se verifica daca diferenta de timestamp dintre doua noduri consecutive se afla in intervalul precizat, caz in care campurile timestamp si value se recalculeaza ca media aritmetica a noului curent si a celui anterior.
 --st() pentru realizarea taskului 2.5. Se realizeaza o copie a listei principale in care elementele sunt sortate crescator, conform campului value. Variabila inf retine capatul inferior al intervalului, iar variabila sup-capatul superior. Daca prima valoare a listei sortate, cpylist, este negativa, variabila inf este calculata astfel incat valoarea sa fie un multiplu al intervalului dat, mai mic decat prima valoare. Valoarea variabilei sup este la o diferenta egala cu intervalul de timp dat. Daca toate valorile date sunt pozitive, valoarea capatului inferior este intial 0. Cat timp mai exista noduri in lista data, variabila nr contorizeaza cate dintre ele se afla in fiecare interval considerat. Sunt afisate datele intervalelor nevide. In final este eliberata memoria pentru copia listei principale. 
 
-     In realizarea task-urilor, apelez anumite functii anterior definite: 
---Functia init_list(), aloca memorie dinamic si seteaza parametrii ->head, ->tail si ->len pe NULL, respectiv 0.
---Functia init_node(), aloca memorie dinamic unui nou nod, initializeaza cu date campurile ->value si ->timestamp si seteaza legaturile cu nodul succesor si cu cel anterior pe NULL. 
---Functia print_list() parcurge lista cu ajutorul nodului aux si o afiseaza, rotunjind campul ->value la 2 zecimale.
---Functia free_node() elibereaza memoria ocupata de un nod, iar destroy_list() elibereaza memoria unei liste, nod cu nod. 
---Functia remove_node() sterge un nod, tinand cont posibila pozitie a nodului: primul nod din lista, ultimul nod din lista, nodul e mai apropiat de capul listei sau nodul e mai apropiat de coada listei.
---Functia insert_node() insereaza un nod, tinand cont posibila pozitie a nodului: nodul trebuie inserat intr-o lista vida, inserarea se face la inceputul listei, la sfarsitul listei, pozitia de inserare este mai apropiata de capul listei sau de coada listei.
---Functia insert_sorted_asc() insereaza in mod crescator nodurile in functie de campul value, tinand cont de cazurile in care nodul trebuie sa fie inserat intr-o lista vida, pe prima pozitie, pe ultima pozitie, inainte de o pozitie mai apropiata de capul listei sau de coada listei.
+In realizarea task-urilor, apelez anumite functii anterior definite: 
+-- Functia init_list(), aloca memorie dinamic si seteaza parametrii ->head, ->tail si ->len pe NULL, respectiv 0.
+-- Functia init_node(), aloca memorie dinamic unui nou nod, initializeaza cu date campurile ->value si ->timestamp si seteaza legaturile cu nodul succesor si cu cel anterior pe NULL. 
+-- Functia print_list() parcurge lista cu ajutorul nodului aux si o afiseaza, rotunjind campul ->value la 2 zecimale.
+-- Functia free_node() elibereaza memoria ocupata de un nod, iar destroy_list() elibereaza memoria unei liste, nod cu nod. 
+-- Functia remove_node() sterge un nod, tinand cont posibila pozitie a nodului: primul nod din lista, ultimul nod din lista, nodul e mai apropiat de capul listei sau nodul e mai apropiat de coada listei.
+-- Functia insert_node() insereaza un nod, tinand cont posibila pozitie a nodului: nodul trebuie inserat intr-o lista vida, inserarea se face la inceputul listei, la sfarsitul listei, pozitia de inserare este mai apropiata de capul listei sau de coada listei.
+-- Functia insert_sorted_asc() insereaza in mod crescator nodurile in functie de campul value, tinand cont de cazurile in care nodul trebuie sa fie inserat intr-o lista vida, pe prima pozitie, pe ultima pozitie, inainte de o pozitie mai apropiata de capul listei sau de coada listei.
