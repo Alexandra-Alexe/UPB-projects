@@ -1,5 +1,5 @@
 									
-								TEMA  3  - SD
+								TEMA  3   SD
 
 	In functia main sunt citite datele de intrare si este contruita matricea de adiacenta, in
  care se marcheaza existenta unui arc intre noduri prin atribuirea costului. Vectorul deposits	
