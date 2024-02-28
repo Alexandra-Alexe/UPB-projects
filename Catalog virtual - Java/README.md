@@ -1,7 +1,5 @@
 				Tema - POO
 
-Alexe Alexandra Florentina
-323CC
 	Consider ca tema a avut un nivel de dificultate mediu. Timpul petrecut implementării
 m-a învățat foarte multe lucruri, fiind nevoie sa recapitulez toata materie si de asemenea, 
 fiind cea mai complexa lucrarea facuta de mine in Java. Am petrecut destul de 
