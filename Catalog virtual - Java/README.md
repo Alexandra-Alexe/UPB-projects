@@ -1,6 +1,6 @@
 				Tema - POO
 
-	Consider ca tema a avut un nivel de dificultate mediu. Timpul petrecut implementării
+Consider ca tema a avut un nivel de dificultate mediu. Timpul petrecut implementării
 m-a învățat foarte multe lucruri, fiind nevoie sa recapitulez toata materie si de asemenea, 
 fiind cea mai complexa lucrarea facuta de mine in Java. Am petrecut destul de 
 mult timp făcând tema, însă acesta se afla intr-o forma nefinalizata și incompleta deoarece am 
