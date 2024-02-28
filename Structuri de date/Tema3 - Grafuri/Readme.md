@@ -1,8 +1,9 @@
 									
-								TEMA  3   SD
+								TEMA  3
 
-	In functia main sunt citite datele de intrare si este contruita matricea de adiacenta, in
- care se marcheaza existenta unui arc intre noduri prin atribuirea costului. Vectorul deposits	
+
+In functia main sunt citite datele de intrare si este contruita matricea de adiacenta, in
+care se marcheaza existenta unui arc intre noduri prin atribuirea costului. Vectorul deposits	
 are valorea 1 pe nodurile care reprezinta depozite. Se citeste numarul de task-uri
 si id-uk fiecaruia.
 	~ Task-ul 1: Variabila s retine depozitul in care se incarca marfa, iar k -  nr de magazine
