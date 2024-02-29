@@ -1,4 +1,4 @@
-Tema 1 APD
+# Tema 1 APD
 
 Pornind de la implementarea secvențială, am paralelizat, cu ajutorul Pthreads un program care generează contururi pentru hărți topologice folosind algoritmul Marching Squares. Scopul final a fost de a se obține aceleași fișiere de ieșire ca la varianta secvențială, dar cu timpi de execuție îmbunătățiți. 
 
