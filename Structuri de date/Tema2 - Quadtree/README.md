@@ -1,5 +1,5 @@
 
-Quadtree
+# Quadtree
 
 Am implementat un algoritm de compresie și decompresie a imaginilor utilizând o structură de date numită "Quadtree". Algoritmul comprimă imaginile prin reprezentarea lor ca un arbore ierarhic, în care fiecare nod reprezintă o regiune a imaginii.
 
