@@ -1,4 +1,4 @@
-                                                     TEMA 1 - SO
+# TEMA 1 - Sisteme de operare
 
 In cadrul acestei teme, am implementat functia segv_handler prin care se realizeaza maparea in cazul unui acces permis 
 si valid la memorie. Am abordat acesta problema folosind o matrice pentru a cunoaste ce pagini au fost mapate si am considerat 
