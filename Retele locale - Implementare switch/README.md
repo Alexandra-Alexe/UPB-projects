@@ -1,7 +1,5 @@
-1 2
 
 #   TEMA 1 - RL
-#Alexe Alexandra Florentina 333 CC
 
 Am rezolvat cerintele 1 si 2.
 
