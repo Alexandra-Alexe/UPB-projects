@@ -5,7 +5,7 @@ supercomputer, ferate si, in mod partial, magazin.
 
 1.Supercomputer
 
-    Ideea rezolvarii problemei a plecat de la sortarea topologica. Dupa mai 
+Ideea rezolvarii problemei a plecat de la sortarea topologica. Dupa mai 
 multe incercari am combinat ideea algoritmului lui Kahn cu principiul programarii 
 dinamice deoarece fara dp, nu as fi ajuns la un algoritm atat de eficient.
 Astfel complexitatea este O(n+m), n fiind nr de noduri, dat de partea in care
@@ -33,7 +33,7 @@ din vectorul dp ca maximul dintre valoarea curenta a dp[i] si valoarea dp[nod
 
  2.Ferate 
  
-    Ideea rezolvarii problemei se bazeaza pe algoritmul tarjan, prin care identific
+Ideea rezolvarii problemei se bazeaza pe algoritmul tarjan, prin care identific
 componentele tari conexe. Ulterior reazlizez un nou graf in care fiecare componenta
 tare conexa reprezinta un nod, iar acest graf este analizat pentru a obtine numarul
 minim de muchii(linii ferate) ce trebuie constuite. Functia tarjanDFS are complexitatea
@@ -81,7 +81,7 @@ adauga de 2 ori.
 
 3.Magazin
 
-    Tinand cont de cerinta, mi-am dat seama ca trebuie sa abordez aceasta problema folosind
+Tinand cont de cerinta, mi-am dat seama ca trebuie sa abordez aceasta problema folosind
 algoritmul de dfs. Complexitatea rezolvarii este data de parcurgerea in adancime inmultita cu
 numarul de intrebari deci este O((n+m)*q), unde m este nr de muchii, adica in cazul nostru
 O(2n*q), pentru n - nr de noduri si q - nr de intrebari.
