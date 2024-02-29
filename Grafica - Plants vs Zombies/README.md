@@ -46,7 +46,7 @@ In functia OnMousePress, se parcurge vectorul de stelute, v_stele si daca butonu
 stanga a fost apasat in interiorul dreptunghiului din jurul unei stelute, aceasta este 
 stearsa din vector.
 
-# #   Enemy clasa + generare + desenare + func_enemy
+#  Enemy clasa + generare + desenare + func_enemy
 
 Evidenta  inamicilor o retin intr-o matrice de 3 x 3, deoarece exista 3 linii 
 posibile pentru aparitia acestora si deoarece am considerat ca la un moment de timp nu pot
@@ -88,7 +88,7 @@ fiind ultima. In cazul scalarii catre 0, se utilieaza si campul scale al inamicu
 este decrementat. Atunci cand scale ajunge mai mic ca 0, toate campurile sunt resetate creand
 cadrul initial.
 
-# #  Gun clasa + generare + drag and drop + desenare + func_gun
+#  Gun clasa + generare + drag and drop + desenare + func_gun
 
 Voi incepe sa descriu generarea armelor din functia OnMouseBtnPress, acolo unde se verifica
 daca a fost apasat butonul stanga al mouse-ului si apoi se apeleaza functia WhichGunToDrag pentru
@@ -120,14 +120,14 @@ occupied = true, si se apeleaza alta functie DrawOrDisappearGun. Acolo, in funct
 campului disappear se face  desenarea continua sau scalarea catre 0, folosind campul specific scale 
 si se tine cont ca atunci cand arma dispare, campurile se fie resetate in forma de inceput. 
 
-# # Coliziune arma - inamic
+# Coliziune arma - inamic
 
 Coliziunea dintre arma si inamic este detectata prin
 parcurgerea celor 2 matrice care tin evidenta acestora si daca exista un inamic si o arma pe
 aceeasi linie, iar distanta dintre centrele acestora este mai mica decat suma razelor, campul 
 disappear al armei este marcat ca true si este apelata functie DrawOrDisappearGun.
 
-# # Proiectiele constructie + desenare + func_shoot
+# Proiectiele constructie + desenare + func_shoot
 
 Aparitia proiectilelor se face prin parcurgerea matricei de arme, iar pentru fiecare se 
 apeleaza functia CanShoot pentru fiecare dintre cele 3 serii de inamici care pot aparea. Aceasta 
@@ -144,7 +144,7 @@ caz in care le sterg din vector, si daca nu are loc o coliziune, le desenez la c
 aici modific campurile angularStep, x si spawnTime prin care se face translatia, rotirea si scurgerea 
 timpului. 
 
-# # Coliziune proiectil - inamic
+# Coliziune proiectil - inamic
 
 Atunci cand se face parcurgerea vectorului de proiectile si se detecteaza faptul ca centrele 
 proiectilului si al inamicului sunt mai apropiate ca suma razelor, counter-ul inamicului este decrementat 
