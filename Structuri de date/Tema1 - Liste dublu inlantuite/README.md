@@ -1,4 +1,4 @@
-  Prelucrarea si analiza datelor secventiale 
+#  Prelucrarea si analiza datelor secventiale 
 
 In functia principala, este creata lista de baza, sunt citite valorile, iar in functie de argumentele din linia de comanda, sunt apelate functiile corespunzatoare. Ulterior este elibearata memoria. Am folosit urmatoarele functii: 
 --e1() pentru rezolvarea taskului 2.1. Prelucrarea se realizeaza pe o copie a listei initiale, cpylist. Pentru calcularea celor 2 sume conform formulei, sunt necesare 2 parcurgeri. Se calculeaza media si deviatia pentru a putea verifica daca nodul curent apartine intervalului, caz in care este sters. Altfel indicele pos, necesar in functia de stergere remove_node() este incrementat. In ambele cazuri, se trece la urmatorul nod curent. Memoria copiei listei este eliberata.
