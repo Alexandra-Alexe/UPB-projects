@@ -11,12 +11,14 @@ dinamice deoarece fara dp, nu as fi ajuns la un algoritm atat de eficient.
 Astfel complexitatea este O(n+m), n fiind nr de noduri, dat de partea in care
 initializeaza coada, de exemplu, iar parcurgerea cozii si actualizarea gradelor 
 interne presupune parcurgerea fiecarei muchii odata deci, de aici m.
-    Algoritmul citeste datele de intrare si retine graful sub forma unei liste de
+
+Algoritmul citeste datele de intrare si retine graful sub forma unei liste de
 adiacenta, graph, si retine setul de date cerut de fiecare task(nod) in vectorul
 dataSet. Pe masura ce se construieste graful, in vectorul inDegree se memoreaza
 gradul intern al fiecarui nod. Se apeleaza functia calculate() care intoarce sub
 forma unui int, nr minim de context switch uri, care se afiseaza.
-    Functia calculate() utilizeaza o coada q, in care se vor introduce la fiecare
+
+Functia calculate() utilizeaza o coada q, in care se vor introduce la fiecare
 pas nodurile cu gradul intern 0, parcurgandu-le conform dependentelor. Vectorul dp 
 are n elemente, initial nule, care vor reprezenta lungimile cele mai lungi de la 
 nodul de inceput pana la nodul i, in care fiecare nod solicita un set diferit de 
