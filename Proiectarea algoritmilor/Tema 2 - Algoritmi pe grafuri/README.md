@@ -1,9 +1,9 @@
-    TEMA 2 - PA 
+TEMA 2 - PA 
 
 Am ales sa implementez tema in limbajul C++ si am rezolvat problemele:
 supercomputer, ferate si, in mod partial, magazin.
 
-1. Supercomputer
+1.Supercomputer
     Ideea rezolvarii problemei a plecat de la sortarea topologica. Dupa mai 
 multe incercari am combinat ideea algoritmului lui Kahn cu principiul programarii 
 dinamice deoarece fara dp, nu as fi ajuns la un algoritm atat de eficient.
@@ -77,7 +77,7 @@ este diferita de componenta curenta, caz in care trebuie sa pastrez acea legatur
 componente. Iau in considerare cazul in care legatura a mai fost adaugata, pentru a nu o
 adauga de 2 ori. 
 
-3. Magazin
+3.Magazin
     Tinand cont de cerinta, mi-am dat seama ca trebuie sa abordez aceasta problema folosind
 algoritmul de dfs. Complexitatea rezolvarii este data de parcurgerea in adancime inmultita cu
 numarul de intrebari deci este O((n+m)*q), unde m este nr de muchii, adica in cazul nostru
