@@ -14,7 +14,7 @@ are complexitatea O(log smax), iar funcția de verificare este apelată in inter
 (log smax) ori, deci complexitatea totală a algoritmului este O(n log smax).
 
 3. Nostory - Am preferat sa modific scheletul dat si sa retin cele 2 liste in vectorii a si b alocati dinamic.
-Ideea de rezolvare cred ca se incadreaza la algoritmii greedy.
+Ideea de rezolvare consider ca se incadreaza la algoritmii greedy.
 
    a)  Pentru taskul 1, m-am folosit de functia sort din biblioteca standard pentru a sorta crecator vectorul
 a si descrescator vectorul b. Atfel, la parcurgerea perechilor de la 0 la n-1, suma maximelor din perechi duce
