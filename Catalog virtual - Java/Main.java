@@ -264,7 +264,7 @@ public class Main {
         for( Course course : catalog.listCourses) {
             for( Student student : course.getAllStudents()) {
                 if(student.getFather() != null)
-                    (student.getFather()).setCatalog(catalog); //setez catalogul in ambele sensuri
+                    (student.getFather()).setCatalog(catalog);
                 if(student.getMother() != null)
                     (student.getMother()).setCatalog(catalog);
             }
