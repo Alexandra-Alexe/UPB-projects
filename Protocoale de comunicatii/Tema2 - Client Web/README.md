@@ -1,6 +1,7 @@
 TEMA 2 - PCOM
 
-    Am implementat tema 4 in limbajul C, fara a utiliza o biblioteca
+
+Am implementat tema 4 in limbajul C, fara a utiliza o biblioteca
 de parsare deoarece eram obisnuita cu implementarea functiilor de 
 modificare a stringurilor, folosind strchr si pointeri. Desi a fost
 o tema mult mai usoara ca celelalte, am lucrat destul de mult pentru
@@ -9,19 +10,21 @@ mult timp am pierdut incercand sa imi dau seama de formatul pe care
 trebuie sa il aiba cererile. Trebuie sa mai mentionez ca am inceput 
 implementarea de la codul laboratorului cu protocolul http.
 
-    Am realizat o functie separata, extract_books, pe care o apelez
+
+Am realizat o functie separata, extract_books, pe care o apelez
 pentru a afisa continutul json ului, eliminand \n si parantezele. 
 Folosind strchr, identific dupa parantez { }, inceputul datelor si
 sfarsitul datelor pe care le afisez prin char *p. Cat timp mai exista 
 o paranteza deschisa, se afiseaza date in continuare, existand un rand
 liber intre carti diferite.
 
-    In functia main exista instructiunea while prin care se citesc
+
+In functia main exista instructiunea while prin care se citesc
 comenzi pana la intalnirea comenzii exit prin care se iese din bucla
 si se incheie programul. Citirea se face folosind fgets, iar ulterior
 se foloseste strcspn pentru a identifica lungimea stringului citit, cu
 scopul de a pun \0 pe pozitia potrivita.
-    REGISTER: Voi descrie mai detaliat prima comanda register iar pe 
+- REGISTER: Voi descrie mai detaliat prima comanda register iar pe 
 celelalte mai succint, accentuand diferentele dintre ele. La inceputul 
 fiecarei comenzi se deschide conexiunea folosind open_connection, iar la 
 final se inchide prin close_connection. Pentru comanda register se 
@@ -38,7 +41,7 @@ primit in response pentru a afisa mesajul corespunzator userului. In
 cazul comenzii register, scenariile posibile sunt fie de a inregistra
 cu succes datele, fie ca acel username sa fie deja utilizat.
 
-    LOGIN: Dupa deschiderea conexiunii si citirea datelor in variabilele
+- LOGIN: Dupa deschiderea conexiunii si citirea datelor in variabilele
 username si password, se construiesc datele in variabila data, in mod
 asemanator, evident fiind diferit url-ul dat ca parametru functiei 
 compute_post_request. Prin send_to_server, ajung informatiile la server
@@ -53,7 +56,7 @@ realocata session_cookie, pentru a fi utilizata ulterior. Un caz alternativ
 al comenzii login este cel in care se incearca logarea dar session_cookie
 retine deja un string, deci clientul va primi mesajul "Esti deja logat!".
 
-    ENTER_LIBRARY: In cazul acestei comenzi si in cazul in care variabila
+- ENTER_LIBRARY: In cazul acestei comenzi si in cazul in care variabila
 jwt_token nu a fost folosita, se deschide conexiunea, se introduce 
 session_cookie-ul primit la logare intru-un char ** cookies pentru a fi
 dat parametru functiei ce returneaza mesajul de cerere. La venirea
@@ -64,7 +67,7 @@ extragerii cookie-ului mai sus. In cazul primirii comenzii enter_library
 atunci cand jwt_token este nenul, clientul va primi mesajul "Ai accesat deja
 biblioteca!", fara a se rula toate aceste intructiuni.
 
-    GET_BOOKS: In cazul acestei comenzi, se verifica daca jwt_token-ul este
+- GET_BOOKS: In cazul acestei comenzi, se verifica daca jwt_token-ul este
 null, pentru a instantia char ** headers cu null, pentru a primi raspunsul
 corespunzator. Altfel, se foloseste valoarea jwt_token-ului. Se creeaza
 mesajul, se trimite, se primeste raspunsul care poate indica eroarea in urma 
@@ -74,7 +77,7 @@ astfel afisandu-se informatiile succinte despre toate cartile existente. In
 cazul in care nu exista carti de afisat, functia apelata va afisa "Nu exista
 carti in biblioteca!".
 
-    GET_BOOK: Comanda asemanatoare celei de dinainte, cu mentiunea ca se
+- GET_BOOK: Comanda asemanatoare celei de dinainte, cu mentiunea ca se
 citeste un int id, care indica numarul cartii despre care se solicita date.
 Id-ul este citit cu scanf astfel incat sa fie un int si sa fie existent. Astfel
 daca nu se introduce nimic, se printeaza mesajul "Introduceti un numar intreg", 
@@ -88,7 +91,7 @@ biblioteca prin lipsa jwt_token-ului sau inexistenta unei carti cu id-ul cerut
 sau poate indica succesul cererii, deci si de acesta data prin functia
 extract_books, se printeaza toate datele cartii specificate.
 
-    ADD_BOOK: In cazul acestei comenzi, sunt citite noile informatii in
+- ADD_BOOK: In cazul acestei comenzi, sunt citite noile informatii in
 variabilele title, author, genre, page_count si publisher, citirea pentru
 page_count fiind facuta dupa modelul citrii pentru id si citirea prin char * 
 fiind facuta dupa modelul citirii pentru username si password de la inceput. 
@@ -101,7 +104,7 @@ introduse incomplet sau care nu respecta formatarea, atunci cand am realizat
 citirea, nepermitand introducerea vreunui camp vid si obligand la pastrarea
 tipului de date.
 
-    DELETE:  In cazul in care userul doreste sa stearga o carte, se citeste id-ul
+- DELETE:  In cazul in care userul doreste sa stearga o carte, se citeste id-ul
 dupa modelul citirilor anterioare si se goleste buffer-ul de intrare drept urmare
 a citirii folosind scanf. Creez url-ul incluzand id-ul si apelez functia 
 compute_delete_request avand ca parametrii ip-ul, url-ul si headerul ce contine 
@@ -111,13 +114,14 @@ compute_get_request, funtia rezolvata in cadrul laboratorului. Rezultatul cereri
 poate indica una dintre cazurile: nu exista acces la biblioteca, id-ul dat nu se
 regaseste printre cartile existente sau cartea dorita chiar a fost stearsa. 
 
-    LOGOUT: Pentru realizarea acestei comenzi, este necesar ca, clientul sa
+- LOGOUT: Pentru realizarea acestei comenzi, este necesar ca, clientul sa
 demonstreze ca este autentificat deci se foloseste session_cookie-ul. Fiind o
 cerere de tip get, se apeleaza compute_get_request si se trimite mesajul. In urma
 raspunsului de la server, fie nu se realizeaza delogarea pentru ca de fapt clientul
 nu este logat, fie se realizeaza cu succes.
 
-    Intre fiecare comanda introdusa, am introdus o printare pentru a fi mai usor 
+
+Intre fiecare comanda introdusa, am introdus o printare pentru a fi mai usor 
 de urmarit functionalitatea programului. Prin aceasta implementare cu print-uri,
 demonstrez realizarea completa a taskurilor deci sunt destul de sigura ca se va ajunge
 la o corectura manuala a temei mele pentru ca nu ma asteptam la aparitia unui checker
