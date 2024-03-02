@@ -1,6 +1,11 @@
 # TEMA  3
 
 
+
+Cerinta temei este implementarea unor operatii de gestionare a marfurilor intre depozit si magazine. 
+Este necesar sa se determine distantele si costurile necesare aprovizionarii, cat si componentele 
+tari conexe ale retelei logistice.
+
 In functia main sunt citite datele de intrare si este contruita matricea de adiacenta, in
 care se marcheaza existenta unui arc intre noduri prin atribuirea costului. Vectorul deposits	
 are valorea 1 pe nodurile care reprezinta depozite. Se citeste numarul de task-uri
