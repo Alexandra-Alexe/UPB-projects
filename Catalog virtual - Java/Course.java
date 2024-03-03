@@ -1,13 +1,13 @@
 import java.util.*;
 
 public abstract class Course {
-     ArrayList<Student> students; //adaugat de mine
-     ArrayList<Group> groups; //adaugat de mine
+     ArrayList<Student> students; 
+     ArrayList<Group> groups; 
      String nameCourse;
      Teacher teacher;
      private Set assistants ;
      List<Grade> grades;
-     HashMap<String, Group> dictionary; //cheie - id grupa; valoare - grupa
+     HashMap<String, Group> dictionary; // cheie - id grupa; valoare - grupa
      int creditPoints;
 
     Course(CourseBuilder courseBuilder) {
@@ -54,7 +54,7 @@ public abstract class Course {
         this.nameCourse = nameCourse;
     }
 
-    //getteri
+    // getteri
     public ArrayList<Group> getGroup() {
         return groups;
     }
@@ -100,10 +100,10 @@ public abstract class Course {
         }
 
         Group group = new Group(ID, assistant);
-        //seteaza asistentul in grupa cu id ul indicat
+        // seteaza asistentul in grupa cu id ul indicat
         for (String key : dictionary.keySet())
             if (key.equals(ID)) {
-                group = dictionary.get(key); //dictionar(id grupei la care setez asistentul)
+                group = dictionary.get(key); 
                 break;
             }
         group.assistant = assistant;
@@ -116,13 +116,11 @@ public abstract class Course {
 
         for (String key : dictionary.keySet())
             if (key.equals(ID)) {
-                group = dictionary.get(key); //dictionar(id grupei la care adaug studentul)
-                group.studentsGroup.add(student); // adaug studentul campul grupei sale
+                group = dictionary.get(key);
+                group.studentsGroup.add(student); 
                 group.addStudent(student);
                 break;
             }
-        //grupa pt cazul in care nu exista deja, se creeaza ulterior in main altfel,
-        //studentul ramane neatribuit unei grupe
     }
 
     public void addGroup(Group group) {
@@ -146,10 +144,9 @@ public abstract class Course {
         return null;
     }
 
-    public void addGrade(Grade grade) { //e bine?
-
+    public void addGrade(Grade grade) { 
         grades.add(grade);
-        //AICI
+        
     }
 
     public ArrayList<Student> getAllStudents() {
@@ -181,13 +178,13 @@ public abstract class Course {
     }
 
     static abstract class CourseBuilder {
-        private ArrayList<Student> students; //adaugat de mine
-        private ArrayList<Group> groups; //adaugat de mine
+        private ArrayList<Student> students; 
+        private ArrayList<Group> groups; 
         private String nameCourse;
         private Teacher teacher;
         private Set assistants;
         private List<Grade> grades;
-        private HashMap<String, Group> dictionary; //cheie - id grupa; valoare - grupa
+        private HashMap<String, Group> dictionary; // cheie - id grupa; valoare - grupa
         private int creditPoints;
         public CourseBuilder(String nameCourse,Teacher teacher, Set assistants) {
             this.nameCourse = nameCourse;
