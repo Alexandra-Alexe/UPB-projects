@@ -12,7 +12,7 @@ Course.java
 Fișierul Course.java conține clasa Course, care definește un curs în cadrul catalogului virtual. Această clasă gestionează informațiile legate de curs, inclusiv grupurile asociate, asistenții și profesorul care predă cursul, precum și evaluările și datele legate de studenți. Oferă funcționalități pentru adăugarea și ștergerea de asistenți și studenți, precum și pentru obținerea informațiilor despre studenți și evaluări. De asemenea, implementează un mecanism pentru determinarea celor mai buni studenți în funcție de strategiile specificate.
 
 Observer.java
-Fișierul Observer.java conține interfața Observer, care definește metodele pentru observatorii care urmăresc anumite evenimente în catalogul virtual.
+Fișierul Observer.java conține interfața Observer, care definește metoda update(Notification notification) utilizată de observatorii care urmăresc anumite evenimente în catalogul virtual. Această interfață oferă un mecanism pentru notificarea observatorilor atunci când apar modificări în sistemul catalogului virtual.
 
 Subject.java
 Fișierul Subject.java conține interfața Subject, care definește metodele pentru subiecții care pot fi observați în cadrul catalogului virtual.
