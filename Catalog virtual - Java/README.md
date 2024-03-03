@@ -1,12 +1,12 @@
-  Tema - POO
+ Tema - POO
 
 Acest proiect reprezintă implementarea unui catalog virtual în limbajul de programare Java. Catalogul virtual permite gestionarea cursurilor, grupelor, studenților și a altor entități asociate. Proiectul este organizat în mai multe fișiere, fiecare având rolul său specific în funcționarea catalogului virtual. 
 
-Main.java
+ Main.java
 
 Fișierul Main.java defineste obiectele și creeaza instanțele necesare pentru funcționarea catalogului. De asemenea, se realizează operațiile de gestionare a datelor, cum ar fi adăugarea și ștergerea cursurilor, afișarea informațiilor despre studenți și evaluări, și gestionarea asistenților și profesorilor.
 
-BestExamScore.java, BestPartialScore.java, BestTotalScore.java
+ BestExamScore.java, BestPartialScore.java, BestTotalScore.java
 
 Cele trei fișiere definesc trei clase distincte care implementează interfața Strategy. Aceste clase reprezintă strategii diferite pentru a determina cel mai bun student în cadrul unui curs, în funcție de scorul obținut în examen, scorul parțial sau scorul total. Fiecare clasă implementează metoda BestGrade(Course course) a interfeței Strategy, care iterează prin lista de note dintr-un curs dat și determină cea mai înaltă notă conform strategiei respective. Deși structura codului este similară în cele trei clase, logica din spate variază în funcție de tipul de scor considerat. 
 
