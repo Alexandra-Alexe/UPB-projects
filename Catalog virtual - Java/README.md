@@ -1,4 +1,4 @@
-Tema - POO
+  Tema - POO
 
 Acest proiect reprezintă implementarea unui catalog virtual în limbajul de programare Java. Catalogul virtual permite gestionarea cursurilor, grupelor, studenților și a altor entități asociate. Proiectul este organizat în mai multe fișiere, fiecare având rolul său specific în funcționarea catalogului virtual. 
 
