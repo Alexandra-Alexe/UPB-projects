@@ -1,6 +1,4 @@
-## TEMA 1 - ASC 
-
-Alexe Alexandra Florentina - 333CC
+## STATISTICI SPORTIVE - TEMA 1 - ASC 
 
 Prin această tema am implementat un server în python care gestionează o serie de requesturi bazate pe un set de date în format csv. Serverul oferă statistici pe baza fișierului csv. Ideea de rezolvarea a temei a fost de a ma folosi de un numar mare de threaduri pentru rezolvarea eficientă a cererilor. Fiecarui request i se atribuie un job_id, care este retinut alaturi de date si de un identificator, într-un tuplu ce va fi util în funcția de run a threadurilor, acolo unde se va calcula rezulatul și sa va scrie într-un fișier specific. Consider ca tema a fost utilă deoarece am aprofundat utilizarea eficientă a elementelor de sincronizare. Consider că e implementarea mea este una concisă și corectă. Trebuie să menționez faptul că am realizat implementarea fișierelor de logging, dar nu am facut unittesting.
 
