@@ -1,5 +1,5 @@
-## Analiza tipurilor de implementări - op cu matrice 
-# Tema 3 - ASC 
+# Analiza tipurilor de implementări - op cu matrice 
+## Tema 3 - ASC 
 
 
 1. Implementarea BLAS
@@ -52,7 +52,7 @@ Am atasat arhivei fisierele neopt.memory, blas.memory si opt_m.memory din care s
 ca nu exista probleme de acces la memorie.
 
 
-# Analiza celor 3 implementări folosind cachegrind
+## Analiza celor 3 implementări folosind cachegrind
 
 
 1. blas.cache 
@@ -110,14 +110,11 @@ multiplicare. Scaderea semnificativa a numărului de referinte de date indica fa
 indicilor a fost o alegere buna.
 
 
-# Analiza grafic 
+## Analiza grafic 
 
 Am creat un fisier de tip json in care am stocat rezultatele rularii celor 3 implementari asupra a 5 valori
 pentru dimensiunea matricei (N = 400, 800, 1200, 1400, 1600). Ruland fisierul graphics.py, se obtine graficul urmator:
 
-![image](image.png)
-
-Am atasat graficul in format png si separat, in arhiva. 
 Analizand graficele, pentru N cu valori intre 400 si 1600, pot spune ca:
 - In medie opt_m este cu aproximativ 65.94% mai rapid decat neopt
 - In medie blas este cu aproximativ 86.71% mai rapid decat opt_m.
