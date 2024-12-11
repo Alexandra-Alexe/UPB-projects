@@ -1,4 +1,4 @@
-# Analiza tipurilor de implementări - op cu matrice 
+# Analiza tipurilor de implementări - operații cu matrice 
 ## Tema 3 - ASC 
 
 
